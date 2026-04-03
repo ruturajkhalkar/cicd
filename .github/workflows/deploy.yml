@@ -17,7 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/ubuntu/test-app/cide
+            cd /home/ubuntu/test-app/cicd
 
             git pull origin main
 
