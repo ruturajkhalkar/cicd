@@ -11,7 +11,7 @@ app.get("/health", (_req, res) => {
 app.get("/", (_req, res) => {
   res.status(200).json({
     name: "cicd-express-server",
-    message: "Server is running v111111",
+    message: "Server is running v222222",
     endpoint: "/health",
   });
 });
