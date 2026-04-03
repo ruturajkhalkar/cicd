@@ -14,7 +14,7 @@ app.get("/", (_req, res) => {
     message: "Server is running v222222",
     endpoint: "/health",
   });
-});
+})
 
 app.use((_req, res) => {
   res.status(404).json({ error: "Not Found" });
@@ -23,6 +23,8 @@ app.use((_req, res) => {
 const server = app.listen(PORT, HOST, () => {
   console.log(`Server listening on http://${HOST}:${PORT}`);
 });
+
+
 
 process.on("SIGINT", () => {
   console.log("Shutting down...");
